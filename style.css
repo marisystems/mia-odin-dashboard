@@ -1,3 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: #000;
+    height: 100vh;
 }
+
+.layout {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    grid-template-areas: 
+    "aside header header header"
+    "aside main main main"
+    "aside main main main"
+    "aside main main main"
+    ;
+
+    background: #cec3c3;
+    height: 100%;
+}
+
+aside {
+    background: #293c9b;
+    grid-area: aside;
+}
+
+header {
+    background: #972323;
+    grid-area: header;
+}
+
+main {
+    background: #932480;
+    grid-area: main;
+}
+
