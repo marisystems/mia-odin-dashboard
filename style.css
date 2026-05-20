@@ -10,7 +10,8 @@ body {
 
 .layout {
     display: grid;
-    grid-template: 1fr 1fr 2fr 1fr/ 1fr 2fr 1fr 1fr;
+    grid-template: 
+        1fr 1fr 2fr 1fr/ minmax(150px, 1fr) 2fr 1fr 1fr;
     grid-template-areas: 
     "aside header header header"
     "aside main main main"
@@ -23,10 +24,26 @@ body {
 
 aside {
     display: grid;
-    justify-items: center;
-
+    padding: 40px 10px;
     background: #293c9b;
     grid-area: aside;
+}
+
+aside ul {
+    display: grid;
+    gap: 10px;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+aside li {
+    display: flex;
+    background: #2cb490;
+}
+
+.logo {
+    display: flex;
+    gap: 20px;
 }
 
 header {
