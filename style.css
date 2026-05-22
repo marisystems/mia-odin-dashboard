@@ -3,20 +3,27 @@
     padding: 0;
 }
 
-body {
+html, body {
     height: 100vh;
     color: white;
 }
 
+img {
+    width: 40px;
+    height: 40px;
+    background: #000;
+}
+
 .layout {
     display: grid;
-    grid-template: 
-        1fr 1fr 2fr 1fr/ minmax(150px, 1fr) 2fr 1fr 1fr;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows:  170px 1fr;
+
     grid-template-areas: 
-    "aside header header header"
-    "aside main main main"
-    "aside main main main"
-    "aside main main main";
+    "aside header"
+    "aside main"
+    "aside main"
+    "aside main";
 
     background: #cec3c3;
     height: 100%;
@@ -24,7 +31,7 @@ body {
 
 aside {
     display: grid;
-    padding: 40px 10px;
+    padding: 40px 40px;
     background: #293c9b;
     grid-area: aside;
 }
@@ -37,8 +44,13 @@ aside ul {
 }
 
 aside li {
+    font-size: 1.1rem;
+
+}
+
+.aside-entry {
     display: flex;
-    background: #2cb490;
+    gap: 10px;
 }
 
 .logo {
@@ -46,26 +58,41 @@ aside li {
     gap: 20px;
 }
 
+/* HEADER */
+
 header {
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    background: #cec4c4;
 
-    background: #972323;
     grid-area: header;
 }
 
 .header-up {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: #4f154f;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 50px 1fr 1fr;
+    padding: 20px 50px;
+    gap: 15px;
+}
+
+.element {
+    background: #000;
+}
+
+.right {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;   
+    margin-left: 100px;
+}
+
+.right > div {
+    background: #4490dc;
 }
 
 .header-bot {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #c72f2f;
 }
 
 .header-bot ul {
@@ -75,15 +102,37 @@ header {
     gap: 20px;
 }
 
+input {
+    max-height: 20px;
+    padding: 20px;
+}
+
+/* --- */
+
 main {
     display: grid;
     grid-template-columns: 3fr 1fr;
     background: #932480;
+    width: 100%;
+
     grid-area: main;
 }
 
-.main-left {
+.card-wrap {
+    display: grid;
+    width: 100%;
+    gap: 20px;
     background: #440909;
+    padding: 30px;
+
+}
+
+.card {
+    background: #000;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid white;
+
 }
 
 .main-right {
