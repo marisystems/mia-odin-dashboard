@@ -125,8 +125,8 @@ main {
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-auto-rows: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 200px;
     gap: 20px;
     padding: 40px;
     background: #9b1717f3;
@@ -136,7 +136,7 @@ main {
 
 .card{
     background: #000;
-    height: 100px;
+    height: 200px;
     border: 2px solid white;
 }
 
