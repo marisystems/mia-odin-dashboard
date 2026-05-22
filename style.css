@@ -15,10 +15,45 @@ main {
     background: #8ba4e1;
 }
 
+/* HEADER */
+
 header {
+    display: grid;
     background: #edae55;
     grid-column: 2 / 4;
 }
+
+.header-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background: #13396c;
+}
+
+.header-top-l {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: #bf1717;
+}
+
+.header-top-l input {
+    width: 60%;
+    max-height: 20px;
+}
+
+.header-top-r {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;;
+    background: #14a3aa;
+}
+
+.header-bot {
+    background: #81db22;
+}
+
+/* --- */
 
 /* ASIDE */
 
@@ -49,6 +84,8 @@ ul {
 }
 /* --- */
 
+/* MAIN */
+
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -56,11 +93,6 @@ main {
     background: #95e473;
     grid-area: 2 / 2 / -1 / -1;
 }
-
-.main-left,
-.main-right {
-    
-} 
 
 .main-left {
     padding: 20px;
@@ -97,3 +129,5 @@ main {
     padding: 20px;
     background: #ffc812;
 }
+
+/* --- */
