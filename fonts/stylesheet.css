@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-Black.woff2') format('woff2'),
+        url('GratiaSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-BlackItalic.woff2') format('woff2'),
+        url('GratiaSans-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-Bold.woff2') format('woff2'),
+        url('GratiaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-BoldItalic.woff2') format('woff2'),
+        url('GratiaSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-ExtraBold.woff2') format('woff2'),
+        url('GratiaSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('GratiaSans-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-ExtraLight.woff2') format('woff2'),
+        url('GratiaSans-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-ExtraLightItalic.woff2') format('woff2'),
+        url('GratiaSans-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-Italic.woff2') format('woff2'),
+        url('GratiaSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-Light.woff2') format('woff2'),
+        url('GratiaSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-LightItalic.woff2') format('woff2'),
+        url('GratiaSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-Medium.woff2') format('woff2'),
+        url('GratiaSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-MediumItalic.woff2') format('woff2'),
+        url('GratiaSans-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans.woff2') format('woff2'),
+        url('GratiaSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-SemiBold.woff2') format('woff2'),
+        url('GratiaSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-SemiBoldItalic.woff2') format('woff2'),
+        url('GratiaSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-Thin.woff2') format('woff2'),
+        url('GratiaSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gratia Sans';
+    src: url('GratiaSans-ThinItalic.woff2') format('woff2'),
+        url('GratiaSans-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
