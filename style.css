@@ -21,24 +21,33 @@ header {
     display: grid;
     background: #edae55;
     grid-column: 2 / 4;
+    padding-top: 20px;
 }
 
 .header-top {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background: #13396c;
 }
 
 .header-top-l {
     display: flex;
-    gap: 10px;
     align-items: center;
-    background: #bf1717;
+    margin-left: 50px;;
+}
+
+.search {
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    display: flex;
 }
 
 .header-top-l input {
-    width: 60%;
-    max-height: 20px;
+    width: 80%;
+    max-height: 25px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .header-top-r {
@@ -46,10 +55,11 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;;
-    background: #14a3aa;
+
 }
 
 .header-bot {
+    display: flex;
     background: #81db22;
 }
 
