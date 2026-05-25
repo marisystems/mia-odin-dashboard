@@ -12,27 +12,29 @@ body {
 header,
 aside,
 main {
-    background: #8ba4e1;
+    background: #ffffff;
 }
 
 /* HEADER */
 
 header {
     display: grid;
-    background: #edae55;
+    background: #f3f0ed;
+    color: black;
     grid-column: 2 / 4;
     padding-top: 20px;
 }
 
-.header-top {
+.header-top,
+.header-bot {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    margin-left: 50px;
+    align-items: center;
 }
 
 .header-top-l {
     display: flex;
-    align-items: center;
-    margin-left: 50px;;
 }
 
 .search {
@@ -58,11 +60,26 @@ header {
 
 }
 
-.header-bot {
+.wrapper {
     display: flex;
-    background: #81db22;
+    gap: 20px;
 }
 
+.header-bot button {
+    background: #247eb6;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40px;
+    grid-auto-flow: column;
+    gap: 25px;
+    margin-right: 70px;
+}
 /* --- */
 
 /* ASIDE */
@@ -99,14 +116,13 @@ ul {
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-
-    background: #95e473;
+    color: black;
+    background: #e1e1e1;
     grid-area: 2 / 2 / -1 / -1;
 }
 
 .main-left {
     padding: 20px;
-    background: #11f063;
     overflow-y: auto;
 }
 
@@ -120,7 +136,7 @@ main {
 
 .card {
     height: 200px;
-    background: #ff3766;
+    background: #fefcfd;
     border: 3px solid rgb(21, 25, 52)
 }
 
