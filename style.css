@@ -50,6 +50,7 @@ header {
     border: none;
     border-radius: 8px;
     padding: 10px;
+    background: #cbc8c8;
 }
 
 .header-top-r {
@@ -130,14 +131,28 @@ main {
     display: grid;
     grid-template-columns:
         repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
+    gap: 30px;
     padding: 20px;
 }
 
 .card {
-    height: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 240px;
     background: #fefcfd;
-    border: 3px solid rgb(21, 25, 52)
+    border-left: 3px solid rgb(21, 25, 52);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card > p {
+    flex: 1;
+}
+
+.icons {
+    display: flex;
+    align-self: end;
+    gap: 12px;
 }
 
 .ann-container {
