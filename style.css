@@ -2,14 +2,14 @@
 
 :root {
     --main-bg: black;
-    --aside-bg: #ef983b;
+    --aside-bg: #ffa341;
     --aside-bg-hover: #333030;
     --header-bg: #f6f1f1;
-    --button-bg: #ef983b;
+    --button-bg: #ffa341;
     --button-color: #eeeeee;
     --main-bg: #e4e0e0;
     --card-bg: white;
-    --card-border-color: #f7b43f;
+    --card-border-color: #ffa341;
     --aside-color: #eef0f1;
     --header-color: #161616;
     --main-color: #161616;
@@ -28,6 +28,10 @@ body {
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 2.5fr 1fr;
     font-family: 'Gratia Sans';
+}
+
+button {
+    cursor: pointer;
 }
 
 /* HEADER */
@@ -266,3 +270,6 @@ main {
     border: none !important;
 }
 
+#notification {
+    cursor: pointer;
+}
