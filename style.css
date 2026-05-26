@@ -1,8 +1,26 @@
 @import url(./fonts/stylesheet.css);
 
+:root {
+    --main-bg: black;
+    --aside-bg: #ef983b;
+    --aside-bg-hover: #333030;
+    --header-bg: #f6f1f1;
+    --button-bg: #ef983b;
+    --button-color: #eeeeee;
+    --main-bg: #e4e0e0;
+    --card-bg: white;
+    --card-border-color: #f7b43f;
+    --aside-color: #eef0f1;
+    --header-color: #161616;
+    --main-color: #161616;
+    --input-color: #dfdada;
+    --separator-color: #54545483;
+}
+
 html, body {
     height: 100vh;
     color: white;
+    background: #000;
 }
 
 body {
@@ -12,17 +30,11 @@ body {
     font-family: 'Gratia Sans';
 }
 
-header,
-aside,
-main {
-    background: #ffffff;
-}
-
 /* HEADER */
 
 header {
     display: grid;
-    background: #f3f0ed;
+    background: var(--header-bg);
     color: black;
     grid-column: 2 / 4;
     padding-top: 20px;
@@ -45,23 +57,23 @@ header {
     align-items: center;
     gap: 20px;
     display: flex;
+    margin-left: 15px;
 }
 
 .header-top-l input {
     width: 80%;
-    max-height: 25px;
+    max-height: 30px;
     border: none;
-    border-radius: 8px;
+    border-radius: 15px;
     padding: 10px;
-    background: #cbc8c8;
+    background: var(--input-color);
 }
 
 .header-top-r {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;;
-
+    gap: 20px;
 }
 
 .wrapper {
@@ -70,10 +82,11 @@ header {
 }
 
 .header-bot button {
-    background: #247eb6;
-    color: white;
+    background: var(--button-bg);
+    color: var(--button-color);
     border: none;
     border-radius: 20px;
+    font-weight: bold;
 }
 
 .button-container {
@@ -90,9 +103,21 @@ header {
 
 aside {
     display: grid;
+    grid-template-rows: 50px 1fr 1fr;
+    gap: 50px; 
     padding: 15px;
-    background: #21b2f0;
+    background: var(--aside-bg);
     grid-row: 1 / -1;
+}
+
+aside li {
+    transition: all 0.5s
+}
+
+aside li:hover {
+    background: var(--aside-bg-hover);
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 ul {
@@ -112,6 +137,7 @@ ul {
     display: flex;
     justify-content: start;
     align-items: start;
+    cursor: help;
 }
 
 .logo-align {
@@ -126,8 +152,8 @@ ul {
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    color: black;
-    background: #e1e1e1;
+    color: var(--main-color);
+    background: var(--main-bg);
     grid-area: 2 / 2 / -1 / -1;
     overflow-y: auto;
 }
@@ -154,10 +180,17 @@ main {
     display: flex;
     flex-direction: column;
     height: 240px;
-    background: #fefcfd;
-    border-left: 6px solid rgb(224, 137, 49);
+    background: var(--card-bg);
+    border-left: 6px solid var(--card-border-color);
     border-radius: 10px;
     padding: 30px 20px 10px 30px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.04);
 }
 
 .card h2 {
@@ -174,6 +207,14 @@ main {
     gap: 12px;
 }
 
+.icons > img {
+    transition: all 0.2s;
+}
+
+.icons > img:hover {
+    transform: scale(1.05) rotate(3deg);
+}
+
 .ann-container {
     display: grid;
     grid-template-rows: 2fr 20px 1fr;
@@ -184,17 +225,16 @@ main {
 
 .card-ann {
     display: flex;
-    flex-flow: column;
     
+    flex-flow: column;
     padding: 8px;
-    grid-template-rows: repeat(3, 1fr);
-    background: #f3f2f4;
+    background: var(--card-bg);
     border-radius: 5px;
 }
 
 .card-ann > div {
     padding: 20px;
-    border-bottom: 1px solid #898787ca;
+    border-bottom: 1px solid var(--separator-color);
 }
 
 .trending {
@@ -209,7 +249,7 @@ main {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: 50px 1fr;
-
+    cursor: pointer;
 }
 
 .user > img {
@@ -217,5 +257,12 @@ main {
     margin-right: 10px;
 }
 
+.image-cropping {
+    border-radius: 50%;
+    object-fit: cover;
+}
 
-/* --- */
+.no-border {
+    border: none !important;
+}
+
